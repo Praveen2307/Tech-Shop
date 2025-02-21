@@ -26,7 +26,6 @@ body{
 }
 .search-container{
     cursor: pointer;
-    
 }
 .tooltip{
     visibility: hidden;
@@ -106,5 +105,106 @@ a{
     width: 100%;
     height: 500px;
     background-color:rgb(54, 52, 52)  ;
-    
+}
+/*  Registration page Styling  */
+
+.container{
+    width: 100%;
+    height: 700px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+.registration-page{
+    width: 30%;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+.form-group input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    color: white;
+}
+input[placeholder]{
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.registration-page button{
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.Sdata{
+    display: flex;
+    gap:10px;
+    position: relative;
+    bottom: 20px;
+}
+.Sdata p:first-of-type{
+    color: gray;
+}
+.foot-container{
+    place-items: center;
+}
+.foot-container p{
+    width: 40%;
+    height: 40px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+.login-bar{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 15px;
+}
+.face-book{
+    width: 32%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(73, 73, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Google{
+    width: 32%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(250, 53, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Twitter{
+    width: 32%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(4, 173, 188);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
