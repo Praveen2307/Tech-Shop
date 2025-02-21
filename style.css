@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(54, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+.logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: 15px;
+}
+.search-container{
+    cursor: pointer;
+    
+}
+.tooltip{
+    visibility: hidden;
+    width: 60px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color:  rgb(54, 52, 52);
+    position: relative;
+    top: 10px;
+    transform: translateX(-20px);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.search-container:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+.cart-container{
+    cursor: pointer;
+}
+.cart-container:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+.n{
+    display:inline-flex;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 10px;
+    background-color:red;
+}
+.profile-tooltip{
+    visibility: hidden;
+    width: 300px;
+    height: 220px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    top: 30px; /* Adjust this so it appears below the icon */
+    left: 40%;
+    transform: translateX(-50%);
+}
+.profile-container{
+    cursor: pointer;
+}
+.profile-container:hover .profile-tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+.profile-tooltip h5{
+    width: 100px;
+    height: 30px;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h5 + p{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    position: relative;
+    bottom: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.Banner{
+    width: 100%;
+    height: 500px;
+    background-color:rgb(54, 52, 52)  ;
+    
+}
