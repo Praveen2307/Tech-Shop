@@ -1,3 +1,6 @@
+@media (min-width:768px) and (max-width:1024px) {
+    
+
 *{
     box-sizing: border-box;
 }
@@ -101,11 +104,45 @@ a{
     color: white;
     text-decoration: none;
 }
+
+/*   Banner    */
 .Banner{
     width: 100%;
     height: 500px;
-    background-color:rgb(54, 52, 52)  ;
+    border: 1px solid white;
+    background-color:rgb(54, 52, 52);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 100px;
 }
+.banner-content{
+    width: 20%;
+    height: 300px;
+    color: white;
+    align-items: center;
+    margin: 20px;
+    z-index: 1;
+    
+    transform: translate(50px,-60px);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner-image img{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    right: 100px;
+}
+.banner-content h2{
+    width: 10em;
+    height: 100px;
+    font-size:12em;
+    margin: 0%;
+    z-index: 0;
+    color: rgb(70, 68, 68);
+    
+}
+
 /*  Registration page Styling  */
 
 .container{
@@ -118,13 +155,30 @@ a{
     background-color: gray;
 }
 .registration-page{
-    width: 30%;
+    width: 35%;
     height: 600px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: black;
     color: white;
     padding: 30px;
+}
+.cross-box{
+    display: none;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: relative;
+    left: 100%;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cross-icon{
+    font-size: 20px;
+    transform: rotate(45deg);
 }
 .form-group input{
     width: 100%;
@@ -169,17 +223,14 @@ input[placeholder]{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 20px;
+    
 }
 .login-bar{
     width: 100%;
-    height: 120px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    bottom: 15px;
 }
 .face-book{
     width: 32%;
@@ -208,3 +259,473 @@ input[placeholder]{
     align-items: center;
     justify-content: center;
 }
+}
+
+
+/*         Small Screen  Mobile                */
+
+
+
+@media (min-width:375px) and (max-width:768px) {
+    
+
+    *{
+        box-sizing: border-box;
+    }
+    body{
+    
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        background-color: rgb(54, 52, 52);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 20px;
+    }
+    .logo{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        cursor: pointer;
+    }
+    .navbar{
+        display: flex;
+        gap: 50px;
+        position: relative;
+        top: 15px;
+    }
+    .search-container{
+        cursor: pointer;
+    }
+    .tooltip{
+        visibility: hidden;
+        width: 60px;
+        height: 20px;
+        border: 1px solid white;
+        border-radius: 2px;
+        background-color:  rgb(54, 52, 52);
+        position: relative;
+        top: 10px;
+        transform: translateX(-20px);
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .search-container:hover .tooltip{
+        visibility: visible;
+        opacity: 1;
+    }
+    .cart-container{
+        cursor: pointer;
+    }
+    .cart-container:hover .tooltip{
+        visibility: visible;
+        opacity: 1;
+    }
+    .n{
+        display:inline-flex;
+        justify-content: center;
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+        position: relative;
+        bottom: 10px;
+        background-color:red;
+    }
+    .profile-tooltip{
+        visibility: hidden;
+        width: 300px;
+        height: 220px;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 20px;
+        position: absolute;
+        top: 30px; /* Adjust this so it appears below the icon */
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    .profile-container{
+        cursor: pointer;
+    }
+    .profile-container:hover .profile-tooltip{
+        visibility: visible;
+        opacity: 1;
+    }
+    .profile-tooltip h5{
+        width: 100px;
+        height: 30px;
+        border: 3px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h5 + p{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid white;
+        position: relative;
+        bottom: 10px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .Banner{
+        width: 100%;
+        height: 500px;
+        background-color:rgb(54, 52, 52)  ;
+    }
+    /*  Registration page Styling  */
+    
+    .container{
+        width: 100%;
+        height: 700px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+    }
+    .registration-page{
+        width: 35%;
+        height: 600px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        padding: 30px;
+    }
+    .cross-box{
+        display: none;
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        position: relative;
+        left: 100%;
+        bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .cross-icon{
+        font-size: 20px;
+        transform: rotate(45deg);
+    }
+    .form-group input{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        background-color: black;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        color: white;
+    }
+    input[placeholder]{
+        padding: 10px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .registration-page button{
+        width: 100%;
+        height: 40px;
+        background-color: red;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        cursor: pointer;
+    }
+    .Sdata{
+        display: flex;
+        gap:10px;
+        position: relative;
+        bottom: 20px;
+    }
+    .Sdata p:first-of-type{
+        color: gray;
+    }
+    .foot-container{
+        place-items: center;
+    }
+    .foot-container p{
+        width: 40%;
+        height: 40px;
+        color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .login-bar{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .face-book{
+        width: 32%;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgb(73, 73, 224);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Google{
+        width: 32%;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgb(250, 53, 53);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Twitter{
+        width: 32%;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgb(4, 173, 188);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+
+    /*              Large Screen Laptops and Screens          */
+
+
+
+    @media (min-width:1440px) and (max-width:2560px) {
+    
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+        
+        }
+        .header{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(54, 52, 52);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 20px;
+        }
+        .logo{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+        }
+        .navbar{
+            display: flex;
+            gap: 50px;
+            position: relative;
+            top: 15px;
+        }
+        .search-container{
+            cursor: pointer;
+        }
+        .tooltip{
+            visibility: hidden;
+            width: 60px;
+            height: 20px;
+            border: 1px solid white;
+            border-radius: 2px;
+            background-color:  rgb(54, 52, 52);
+            position: relative;
+            top: 10px;
+            transform: translateX(-20px);
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .search-container:hover .tooltip{
+            visibility: visible;
+            opacity: 1;
+        }
+        .cart-container{
+            cursor: pointer;
+        }
+        .cart-container:hover .tooltip{
+            visibility: visible;
+            opacity: 1;
+        }
+        .n{
+            display:inline-flex;
+            justify-content: center;
+            width: 15px;
+            height: 15px;
+            border-radius: 5px;
+            position: relative;
+            bottom: 10px;
+            background-color:red;
+        }
+        .profile-tooltip{
+            visibility: hidden;
+            width: 300px;
+            height: 220px;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 20px;
+            position: absolute;
+            top: 30px; /* Adjust this so it appears below the icon */
+            left: 40%;
+            transform: translateX(-50%);
+        }
+        .profile-container{
+            cursor: pointer;
+        }
+        .profile-container:hover .profile-tooltip{
+            visibility: visible;
+            opacity: 1;
+        }
+        .profile-tooltip h5{
+            width: 100px;
+            height: 30px;
+            border: 3px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h5 + p{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid white;
+            position: relative;
+            bottom: 10px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .Banner{
+            width: 100%;
+            height: 500px;
+            background-color:rgb(54, 52, 52)  ;
+        }
+        /*  Registration page Styling  */
+        
+        .container{
+            width: 100%;
+            height: 700px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+        }
+        .registration-page{
+            width: 35%;
+            height: 600px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            padding: 30px;
+        }
+        .cross-box{
+            display: none;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            position: relative;
+            left: 100%;
+            bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .cross-icon{
+            font-size: 20px;
+            transform: rotate(45deg);
+        }
+        .form-group input{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            background-color: black;
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            color: white;
+        }
+        input[placeholder]{
+            padding: 10px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .registration-page button{
+            width: 100%;
+            height: 40px;
+            background-color: red;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+        }
+        .Sdata{
+            display: flex;
+            gap:10px;
+            position: relative;
+            bottom: 20px;
+        }
+        .Sdata p:first-of-type{
+            color: gray;
+        }
+        .foot-container{
+            place-items: center;
+        }
+        .foot-container p{
+            width: 40%;
+            height: 40px;
+            color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .login-bar{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .face-book{
+            width: 32%;
+            height: 40px;
+            border-radius: 5px;
+            background-color: rgb(73, 73, 224);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Google{
+            width: 32%;
+            height: 40px;
+            border-radius: 5px;
+            background-color: rgb(250, 53, 53);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Twitter{
+            width: 32%;
+            height: 40px;
+            border-radius: 5px;
+            background-color: rgb(4, 173, 188);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        }
+        
