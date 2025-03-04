@@ -163,7 +163,7 @@
     }
     .slide-box{
         width: 100%;
-        height: 500px;
+        height: 600px;
         background-color: rgb(54, 52, 52);
         color: white;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -175,7 +175,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .slide-bar{
         width: 100%;
@@ -183,7 +183,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 1.2em;
+        font-size: 0.8em;
     }
     .middle-card{
         width: 20%;
@@ -266,7 +266,7 @@
         width: 24.5%;
         height: 530px;
         border-radius: 5px;
-        box-shadow: -2px -2px 2px  white;
+        box-shadow: -1px -1px 2px  white;
     }
     .card-image{
         width: 100%;
@@ -284,10 +284,11 @@
         height: 278px;
         background-color: black;
         padding: 20px;
+        border-radius: 5px;
     }
     .card-content p i{
         color: red;
-
+        font-size: 0.8em;
     }
     .card-content p{
         color: gray;
@@ -311,6 +312,7 @@
         border-radius: 5px;
         color: white;
         cursor: pointer;
+        box-shadow: -1px -1px 2px  white;
     }
     .F-card{
         width: 24.5%;
@@ -628,7 +630,7 @@
     }
     .slide-box{
         width: 100%;
-        height: 700px;
+        height: 450px;
         background-color: rgb(54, 52, 52);
         color: white;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -679,6 +681,123 @@
     .side-cards img{
         width: 100%;
         height: 60px;
+    }
+    .head-card{
+        width: 100%;
+        height: 120px;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .head-card-heading{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+    .head-card-content{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: gray;
+        font-size: 0.7em;
+    }
+    .head-card-content button{
+        width: 50px;
+        height: 20px;
+        background-color:red;   
+        color:white;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 0.7em;
+    }
+    .M-card{
+        width: 100%;
+        height: 330px;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-left:10px;
+        padding-right: 10px;
+        
+    }
+    .S-card{
+        width: 24.5%;
+        height: 315px;
+        border-radius: 5px;
+        box-shadow: -1px -1px 2px  white;
+    }
+    .card-image{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-image img{
+        width: 80%;
+        height: 80px;
+    }
+    .card-content{
+        width: 100%;
+        height: 224px;
+        background-color: black;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius:5px ;
+    }
+    .card-content p i{
+        color: red;
+        font-size: 0.6em;
+    }
+    .card-content p{
+        color: gray;
+        font-size: 0.9em;
+    }
+    .card-content h3{
+        font-size: 0.7em;
+    }
+    .card-content h4{
+        font-size: 0.6em;
+    }
+    .S-card hr{
+        width: 100%;
+        border: 1px solid gray;
+    }
+    .S-card button{
+        width: 100%;
+        height: 32px;
+        background-color: red;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8em;
+    }
+    .F-card{
+        width: 24.5%;
+        height: 315px;
+        border-radius: 5px;
+        box-shadow: -2px -2px 2px  white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        color: gray;
+        padding: 10px;
+        box-shadow: -1px -1px 2px  white;
     }
     /*  Registration page Styling  */
     
@@ -942,12 +1061,12 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         .banner-content{
-            width: 60%;
+            width: 50%;
             height: 500px;
             padding: 10px;
         }
         .banner-image{
-            width: 40%;
+            width: 50%;
             height: 500px;
         }
         .banner-image img{
@@ -987,7 +1106,7 @@
         }
         .slide-box{
             width: 100%;
-            height: 650px;
+            height: 600px;
             background-color: rgb(54, 52, 52);
             color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -999,7 +1118,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .slide-bar{
             width: 100%;
@@ -1007,7 +1126,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .middle-card{
             width: 20%;
@@ -1108,6 +1227,7 @@
             height: 278px;
             background-color: black;
             padding: 20px;
+            border-radius: 5px;
         }
         .card-content p i{
             color: red;
@@ -1129,6 +1249,7 @@
             border-radius: 5px;
             color: white;
             cursor: pointer;
+            font-size: 1em;
         }
         .F-card{
             width: 24.5%;
@@ -1141,6 +1262,7 @@
             font-size: 1.5em;
             color: gray;
             padding: 10px;
+            box-shadow: -2px -2px 2px  white;
         }
         /*  Registration page Styling  */
         
