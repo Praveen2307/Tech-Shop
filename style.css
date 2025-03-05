@@ -16,6 +16,8 @@
         align-items: center;
         color: white;
         padding: 20px;
+        position: fixed;
+        z-index: 1;
         
     }
     .logo{
@@ -114,6 +116,7 @@
         align-items: center;
         justify-content: space-around;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        z-index: 0;
     }
     .banner-content{
         width: 70%;
@@ -266,7 +269,8 @@
         width: 24.5%;
         height: 530px;
         border-radius: 5px;
-        box-shadow: -1px -1px 2px  white;
+        border: 1px solid rgb(144, 143, 143);
+        box-shadow: -1px -1px 2px rgb(144, 143, 143);
     }
     .card-image{
         width: 100%;
@@ -281,10 +285,18 @@
     }
     .card-content{
         width: 100%;
-        height: 278px;
+        height: 228px;
         background-color: black;
         padding: 20px;
         border-radius: 5px;
+    }
+    .card-button{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
     }
     .card-content p i{
         color: red;
@@ -312,8 +324,9 @@
         border-radius: 5px;
         color: white;
         cursor: pointer;
-        box-shadow: -1px -1px 2px  white;
+
     }
+
     .F-card{
         width: 24.5%;
         height: 530px;
@@ -326,11 +339,109 @@
         color: gray;
         padding: 10px;
     }
+    .F-box{
+        width: 100%;
+        height: 350px;
+        background-color: rgb(54, 52, 52)
+    }
+    .F-box-heading{
+        width: 100%;
+        height: 200px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .F-box-content{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+    .S-box{
+        width: 25%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .S-box i{
+        font-size: 2em;
+        color: red;
+
+    }
+    .S-box-content p{
+        color: gray;
+
+    }
+    .F-container{
+        width: 100%;
+        height: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 20px;
+    }
+    .F-container p{
+        color: gray;
+    }
+    .F-container-card1{
+        width: 20%;
+    }
+    .F-container-card1 form input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: black;
+    }
+    .F-container-card1 div{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .F-container-card1 button{
+        width: 50%;
+        height: 40px;
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+    }
+    .Footer{
+        width: 100%;
+        height: 60px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: fixed;
+        bottom: 0px;
+    }
+    .Footer-Navbar{
+        width: 30%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 40px;
+    }
     /*  Registration page Styling  */
     
     .container{
         width: 100%;
-        height: 700px;
+        height: 642px;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         display: flex;
         align-items: center;
@@ -338,8 +449,8 @@
         background-color: gray;
     }
     .registration-page{
-        width: 35%;
-        height: 600px;
+        width: 60%;
+        height: 610px;
         border: 1px solid black;
         border-radius: 10px;
         background-color: black;
@@ -358,6 +469,8 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        position: relative;
+        bottom: 45px;
     }
     .cross-icon{
         font-size: 20px;
@@ -735,7 +848,8 @@
         width: 24.5%;
         height: 315px;
         border-radius: 5px;
-        box-shadow: -1px -1px 2px  white;
+        border: 1px solid rgb(144, 143, 143);
+        box-shadow: -1px -1px 2px rgb(144, 143, 143);
     }
     .card-image{
         width: 100%;
@@ -750,13 +864,22 @@
     }
     .card-content{
         width: 100%;
-        height: 224px;
+        height: 184px;
         background-color: black;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 2px;
         padding-bottom: 2px;
         border-radius:5px ;
+    }
+    .card-button{
+        width: 100%;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 5px;
     }
     .card-content p i{
         color: red;
@@ -797,22 +920,118 @@
         font-size: 1em;
         color: gray;
         padding: 10px;
-        box-shadow: -1px -1px 2px  white;
+        border: 1px solid rgb(144, 143, 143);
+        box-shadow: -1px -1px 2px rgb(144, 143, 143);
+    }
+    .F-box{
+        width: 100%;
+        height: 350px;
+        background-color: rgb(54, 52, 52)
+    }
+    .F-box-heading{
+        width: 100%;
+        height: 150px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .F-box-content{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        
+    }
+    .S-box{
+        width: 25%;
+        height: 150px;
+        
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+    }
+    .S-box i{
+        font-size: 2em;
+        color: red;
+
+    }
+    .S-box-content p{
+        color: gray;
+
+    }
+    .F-container{
+        width: 100%;
+        height: 900px;
+        
+        background-color: black;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 20px;
+    }
+    .F-container p{
+        color: gray;
+    }
+    .F-container-card1{
+        width: 100%;
+    }
+    .F-container-card1 form input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: black;
+    }
+    .F-container-card1 div{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .F-container-card1 button{
+        width: 40%;
+        height: 40px;
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+    }
+    .Footer{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        place-items: center;
+    }
+    .Footer-Navbar{
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
     }
     /*  Registration page Styling  */
     
     .container{
         width: 100%;
-        height: 700px;
+        height: 642px;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
+        
         background-color: gray;
     }
     .registration-page{
-        width: 35%;
-        height: 600px;
+        width: 80%;
+        height: 600;
+        
         border: 1px solid black;
         border-radius: 10px;
         background-color: black;
@@ -831,6 +1050,8 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        position: relative;
+        bottom: 80px;
     }
     .cross-icon{
         font-size: 20px;
@@ -1228,10 +1449,28 @@
         }
         .card-content{
             width: 100%;
-            height: 278px;
+            height: 228px;
             background-color: black;
             padding: 20px;
             border-radius: 5px;
+        }
+        .card-button{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .S-card button{
+            width: 80%;
+            height: 40px;
+            background-color: red;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
         }
         .card-content p i{
             color: red;
@@ -1245,16 +1484,7 @@
             width: 100%;
             border: 1px solid gray;
         }
-        .S-card button{
-            width: 100%;
-            height: 40px;
-            background-color: red;
-            text-align: center;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            font-size: 1em;
-        }
+        
         .F-card{
             width: 24.5%;
             height: 530px;
@@ -1343,6 +1573,7 @@
             height: 40px;
             background-color: red;
             border-radius: 5px;
+            color: white;
         }
         .Footer{
             width: 100%;
@@ -1369,7 +1600,7 @@
         
         .container{
             width: 100%;
-            height: 700px;
+            height: 800px;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             display: flex;
             align-items: center;
@@ -1377,7 +1608,7 @@
             background-color: gray;
         }
         .registration-page{
-            width: 35%;
+            width: 50%;
             height: 600px;
             border: 1px solid black;
             border-radius: 10px;
@@ -1397,6 +1628,8 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            position: relative;
+            bottom: 80px;
         }
         .cross-icon{
             font-size: 20px;
@@ -1482,4 +1715,591 @@
             justify-content: center;
         }
         }
+
+
+        /*-------------------------------  Very Small Screen  ----------------------------------------------------------------------*/
+
+
+        @media (min-width:320px) and (max-width:425px) {
+    
+
+            *{
+                box-sizing: border-box;
+            }
+            html, body {
+                overflow-x: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            .header{
+                width: 100%;
+                height: 50px;
+                background-color: rgb(54, 52, 52);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+                padding: 10px;
+            }
+            .logo{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                cursor: pointer;
+                font-size: 0.6em;
+            }
+            .navbar{
+                display: flex;
+                gap: 5px;
+                position: relative;
+                top: 15px;
+            }
+            .search-container{
+                cursor: pointer;
+            }
+            .tooltip{
+                visibility: hidden;
+                width: 60px;
+                height: 20px;
+                border: 1px solid white;
+                border-radius: 2px;
+                background-color:  rgb(54, 52, 52);
+                position: relative;
+                top: 10px;
+                transform: translateX(-20px);
+                text-align: center;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .search-container:hover .tooltip{
+                visibility: visible;
+                opacity: 1;
+            }
+            .cart-container{
+                cursor: pointer;
+            }
+            .cart-container:hover .tooltip{
+                visibility: visible;
+                opacity: 1;
+            }
+            .n{
+                display:inline-flex;
+                justify-content: center;
+                width: 15px;
+                height: 15px;
+                border-radius: 5px;
+                position: relative;
+                bottom: 10px;
+                background-color:red;
+            }
+            .profile-tooltip{
+                visibility: hidden;
+                width: 240px;
+                height: 170px;
+                border: 1px solid white;
+                background-color:rgb(54, 52, 52) ;
+                border-radius: 5px;
+                padding: 20px;
+                position: absolute;
+                top: 30px; /* Adjust this so it appears below the icon */
+                left: 40%;
+                transform: translateX(-61%);
+                z-index: 1;
+            }
+            .profile-container{
+                cursor: pointer;
+            }
+            .profile-container:hover .profile-tooltip{
+                visibility: visible;
+                opacity: 1;
+            }
+            .profile-tooltip h5{
+                width: 100px;
+                height: 25px;
+                border: 3px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                margin: 0px;
+            }
+            .profile-tooltip h3{
+                font-size: 12px;
+                margin: 0px;
+            }
+            h5 + p{
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                border-top: 1px solid white;
+                position: relative;
+                bottom: 10px;
+                font-size: 12px;
+                margin: 0px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            .Banner{
+                width: 100%;
+                height: 500px;
+                background-color:rgb(54, 52, 52)  ;
+            }
+            .Banner{
+                width: 100%;
+                height: 300px;
+                background-color:rgb(54, 52, 52);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .banner-content{
+                width: 65%;
+                height: 250px;
+                padding: 10px;
+                
+            }
+            .banner-image{
+                width: 35%;
+                height: 250px;
+                
+            }
+            .banner-image img{
+                width: 100%;
+                height: 250px;
+            }
+            .banner-content h2{
+                width: 100%;
+                height: 50px;
+                font-size: 5em;
+                color: rgb(66, 65, 65);
+                margin: 20px;
+            }
+            .banner-content p{
+                font-size: 1em;
+                transform:translate(50px,-20px);
+            }
+            .banner-content div{
+                width: 60%;
+            }
+            .banner-content h3{
+                font-size: 1em;
+                transform:translate(50px,-20px);
+            }
+            strike{
+                color: rgb(150, 148, 148);
+            }
+            .banner-content button{
+                width: 50%;
+                height: 35px;
+                color: white;
+                background-color: red;
+                border-radius: 5px;
+                font-size: 1em;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                transform:translate(50px,-20px);
+            }
+            .slide-box{
+                width: 100%;
+                height: 450px;
+                background-color: rgb(54, 52, 52);
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding: 10px;
+            }
+            .heading{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.7em;
+            }
+            .slide-bar{
+                width: 100%;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 0.75em;
+            }
+            .middle-card{
+                width: 20%;
+                height: 250px;
+                place-items: center;
+                text-align: center;
+            }
+            .middle-card img{
+                width: 100%;
+                height: 180px;
+            }
+            .adjacent-card{
+                width: 18%;
+                height: 200px;
+                place-items: center;
+                text-align: center;
+            }
+            .adjacent-card img{
+                width: 100%;
+                height: 120px;
+            }
+            .side-cards{
+                width: 16%;
+                height: 180px;
+                place-items: center;
+                text-align: center;
+            }
+            .side-cards img{
+                width: 100%;
+                height: 60px;
+            }
+            .head-card{
+                width: 100%;
+                height: 120px;
+                background-color: rgb(54, 52, 52);
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .head-card-heading{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.7em;
+            }
+            .head-card-content{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                color: gray;
+                font-size: 0.6em;
+            }
+            .head-card-content button{
+                width: 50px;
+                height: 20px;
+                background-color:red;   
+                color:white;  
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                font-size: 0.7em;
+            }
+            .M-card{
+                width: 100%;
+                height: 330px;
+                background-color: rgb(54, 52, 52);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-left:10px;
+                padding-right: 10px;
+                
+            }
+            .S-card{
+                width: 24.5%;
+                height: 315px;
+                border-radius: 5px;
+                border: 1px solid rgb(144, 143, 143);
+                box-shadow: -1px -1px 2px rgb(144, 143, 143);
+            }
+            .card-image{
+                width: 100%;
+                height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .card-image img{
+                width: 80%;
+                height: 80px;
+            }
+            .card-content{
+                width: 100%;
+                height: 184px;
+                background-color: black;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                border-radius:5px ;
+            }
+            .card-button{
+                width: 100%;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                border-radius: 5px;
+            }
+            .card-content p i{
+                color: red;
+                font-size: 0.6em;
+            }
+            .card-content p{
+                color: gray;
+                font-size: 0.9em;
+            }
+            .card-content h3{
+                font-size: 0.7em;
+            }
+            .card-content h4{
+                font-size: 0.6em;
+            }
+            .S-card hr{
+                width: 100%;
+                border: 1px solid gray;
+            }
+            .S-card button{
+                width: 100%;
+                height: 32px;
+                background-color: red;
+                text-align: center;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                font-size: 0.8em;
+            }
+            .F-card{
+                width: 24.5%;
+                height: 315px;
+                border-radius: 5px;
+                box-shadow: -2px -2px 2px  white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1em;
+                color: gray;
+                padding: 10px;
+                border: 1px solid rgb(144, 143, 143);
+                box-shadow: -1px -1px 2px rgb(144, 143, 143);
+            }
+            .F-box{
+                width: 100%;
+                height: 280px;
+                background-color: rgb(54, 52, 52)
+            }
+            .F-box-heading{
+                width: 100%;
+                height: 150px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 0.7em;
+            }
+            .F-box-content{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white;
+                font-size: 0.8em;
+            }
+            .S-box{
+                width: 25%;
+                height: 150px;
+                
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding: 10px;
+            }
+            .S-box i{
+                font-size: 2em;
+                color: red;
+        
+            }
+            .S-box-content p{
+                color: gray;
+        
+            }
+            .F-container{
+                width: 100%;
+                height: 900px;
+                
+                background-color: black;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding: 20px;
+            }
+            .F-container p{
+                color: gray;
+            }
+            .F-container h3{
+                font-size: 1em;
+            }
+            .F-container-card1{
+                width: 100%;
+            }
+            .F-container-card1 h2{
+                font-size: 1.2em;
+            }
+            .F-container-card1 form input{
+                width: 100%;
+                height: 50px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                background-color: black;
+            }
+            .F-container-card1 div{
+                width: 100%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+            }
+            .F-container-card1 button{
+                width: 40%;
+                height: 40px;
+                background-color: red;
+                border-radius: 5px;
+                color: white;
+            }
+            .Footer{
+                width: 100%;
+                height: 120px;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                place-items: center;
+            }
+            .Footer-Navbar{
+                width: 100%;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+            }
+            /*  Registration page Styling  */
+            
+            .container{
+                width: 100%;
+                height: 642px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: gray;
+            }
+            .registration-page{
+                width: 100%;
+                height: 600px;
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: black;
+                color: white;
+                padding: 30px;
+            }
+            .cross-box{
+                display: none;
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                position: relative;
+                left: 100%;
+                bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                position: relative;
+                bottom: 80px;
+            }
+            .cross-icon{
+                font-size: 20px;
+                transform: rotate(45deg);
+            }
+            .form-group input{
+                width: 100%;
+                height: 40px;
+                margin-bottom: 20px;
+                background-color: black;
+                border: 1px solid whitesmoke;
+                border-radius: 5px;
+                color: white;
+            }
+            input[placeholder]{
+                padding: 10px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .registration-page button{
+                width: 100%;
+                height: 40px;
+                background-color: red;
+                text-align: center;
+                border-radius: 5px;
+                color: white;
+                font-size: 18px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                cursor: pointer;
+            }
+            .Sdata{
+                display: flex;
+                gap:10px;
+                position: relative;
+                bottom: 20px;
+            }
+            .Sdata p:first-of-type{
+                color: gray;
+            }
+            .foot-container{
+                place-items: center;
+            }
+            .foot-container p{
+                width: 40%;
+                height: 40px;
+                color: gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .login-bar{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .face-book{
+                width: 32%;
+                height: 40px;
+                border-radius: 5px;
+                background-color: rgb(73, 73, 224);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .Google{
+                width: 32%;
+                height: 40px;
+                border-radius: 5px;
+                background-color: rgb(250, 53, 53);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .Twitter{
+                width: 32%;
+                height: 40px;
+                border-radius: 5px;
+                background-color: rgb(4, 173, 188);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
         
