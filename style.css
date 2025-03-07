@@ -1714,7 +1714,60 @@
             align-items: center;
             justify-content: center;
         }
+
+        /*           Crat-Page           */
+
+        .cart-box{
+            width: 100%;
+            height: 1000px;
+            background-color:rgb(54, 52, 52) ;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
+        .scroll-box{
+            width: 50%;
+            height: 500px;
+            background-color: rgb(106, 105, 105);
+            border: 1px solid white;
+            overflow-y: auto;
+        }
+        .scroll-box-card{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+            
+        }
+        .scroll-card-image{
+            width: 20%;
+            height: 150px;
+            border: 1px solid white;
+        }
+        .scroll-card-image img{
+            width: 100%;
+            height: 100%;
+        }
+        .scroll-card-content{
+            width:40%;
+            height: 200px;
+            border: 1px solid white;
+
+        }
+        .static-box{
+            width: 30%;
+            height: 500px;
+        }
+        .price-details{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 
 
         /*-------------------------------  Very Small Screen  ----------------------------------------------------------------------*/
